@@ -1,7 +1,6 @@
 package Addressbook;
 
 /**
- * @author Hassib
  * Project 4
  * Qi Wang
  */
