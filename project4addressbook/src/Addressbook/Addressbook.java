@@ -4,7 +4,6 @@ import bst.BinaryTree;
 import bst.TreeIterator;
 import bst.TreeNode;
 /**
- * @author Hassib
  * Project 4
  * Qi Wang
  */
