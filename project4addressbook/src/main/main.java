@@ -1,7 +1,6 @@
 package main;
 
 /**
- * @author Hassib
  * Project 4
  * Qi Wang
  */
