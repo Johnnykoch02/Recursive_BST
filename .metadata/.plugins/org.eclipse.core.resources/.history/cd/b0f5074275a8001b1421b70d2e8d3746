@@ -1,0 +1,70 @@
+package Addressbook;
+
+import bst.BinaryTree;
+import bst.TreeIterator;
+import bst.TreeNode;
+
+public class Addressbook {
+
+	/**
+	 * Binary Tree Variable
+	 */
+	private BinaryTree<Contact> tree;
+	/**
+	 * Count Variable
+	 */
+	private int count;
+	
+	/**
+	 * Creates an empty Addressbook
+	 */
+	public Addressbook() {
+		tree = new BinaryTree<Contact>();
+	}
+	
+	/**
+	 * Makes the Addressbook empty
+	 */
+	public void clear() {
+		tree.makeEmpty();
+	}
+	
+	/**
+	 * Gets number of contacts
+	 * @return count of contacts
+	 */
+	public int count() {
+		return this.count;
+	}
+	
+	/**
+	 * Searches for the contact with name
+	 * @param name of contact being looked for
+	 * @return the contact found, or null
+	 */
+	public TreeNode<Contact> search(String name) {
+		return tree.search(new Contact(name, null, null));
+	}
+	
+	/**
+	 * Returns the iterator for this Addressbook
+	 * @return TreeIterator of contacts
+	 */
+	public TreeIterator<Contact> iterator() {
+		return tree.iterator();
+	}
+	
+	/**
+	 * Adds a new contact into the Addressbook
+	 * @param data is the Contact being added
+	 */
+	public void add(Contact data)  {
+		tree.insert(data);
+	}
+	
+	public void remove(String name) {
+		tree.remove(new Contact(name, null, null));
+	}
+
+
+}

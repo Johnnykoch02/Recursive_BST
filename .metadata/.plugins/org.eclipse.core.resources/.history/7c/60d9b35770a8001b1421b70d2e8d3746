@@ -1,0 +1,54 @@
+package Addressbook;
+
+public class Contact implements Comparable<Contact> {
+	/**
+	 * Name Variable	
+	 */
+	private String name;
+	/**
+	 * Address Variable
+	 */
+	private  Address address;
+	/**
+	 * Phone Number Variable
+	 */
+	private String phone;
+	
+	Contact(String name, Address addy, String phone) {
+		this.name = name;
+		this.address = addy;
+		this.phone = phone;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	/**
+	 * 
+	 */
+	@Override
+	public int compareTo(Contact o) {
+		// TODO Auto-generated method stub
+		return this.name.compareToIgnoreCase(o.name);
+	}
+}

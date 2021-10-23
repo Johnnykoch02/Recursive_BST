@@ -1,0 +1,36 @@
+package Addressbook;
+
+public class Address {
+
+	/**
+	 * Street Variable
+	 */
+	private String street;
+	/**
+	 * City Variable
+	 */
+	private String city;
+	/**
+	 * State Variable
+	 */
+	private String state;
+	/**
+	 * Zipcode Variable
+	 */
+	private String zipcode;
+	
+	/**
+	 * Address Constructor
+	 * @param street is the street
+	 * @param city is the city
+	 * @param state is the state
+	 * @param zipcode is the zipcode
+	 */
+	public Address(String street, String city, String state, String zipcode) {
+		this.street = street;
+		this.city = city;
+		this.state = state;
+		this.zipcode = zipcode;
+	}
+	
+}

@@ -1,0 +1,5 @@
+package Addressbook;
+
+public class Contact {
+
+}
